@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de la persona Usuaria</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div id="form-wrapper">
+    <div class="form-header">
+      <span class="badge">Nueva cuenta</span>
+      <h1>Registro de la <span>persona Usuaria</span></h1>
+      <p>Completa los campos para crear tu perfil.</p>
+    </div>
+
+    <form id="registro-form" novalidate>
+      <p class="section-title">Datos personales</p>
+      <div class="field-group">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Javier" required />
+        </div>
+        <div class="field">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Ej. García" required />
+        </div>
+      </div>
+
+      <p class="section-title">Acceso</p>
+      <div class="field">
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required />
+      </div>
+      <div class="field">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" placeholder="Mínimo 8 caracteres" required />
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="section-title">Sobre ti</p>
+      <div class="field">
+        <label for="descripcion">Breve descripción</label>
+        <textarea id="descripcion" name="descripcion" placeholder="Cuéntanos un poco sobre ti…"></textarea>
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="section-title">Intereses</p>
+      <div class="interests-grid">
+        <label class="checkbox-card">
+          <input type="checkbox" name="intereses" value="tecnologia" id="int-tec" />
+          💻 Tecnología
+        </label>
+        <label class="checkbox-card">
+          <input type="checkbox" name="intereses" value="arte" id="int-art" />
+          🎨 Arte
+        </label>
+        <label class="checkbox-card">
+          <input type="checkbox" name="intereses" value="deporte" id="int-dep" />
+          ⚽ Deporte
+        </label>
+        <label class="checkbox-card">
+          <input type="checkbox" name="intereses" value="musica" id="int-mus" />
+          🎵 Música
+        </label>
+        <label class="checkbox-card">
+          <input type="checkbox" name="intereses" value="viajes" id="int-via" />
+          ✈️ Viajes
+        </label>
+        <label class="checkbox-card">
+          <input type="checkbox" name="intereses" value="ciencia" id="int-cie" />
+          🔬 Ciencia
+        </label>
+      </div>
+
+      <button type="submit" id="btn-submit">Registrarse</button>
+    </form>
+
+    <p class="form-footer">Al registrarte aceptas los términos y condiciones.</p>
+  </div>
+</body>
+</html>
